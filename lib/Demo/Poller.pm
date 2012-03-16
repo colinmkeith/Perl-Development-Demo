@@ -24,7 +24,11 @@ sub new {
   };
 
   # Given arg pairs? Then merge over defaults;
-  (@args % 2) == 0 && ($self = {%{$self}, @args});
+  for(my $i=0; $i<@args; $i+=2) {
+    my $k = $args[$i];
+    $k =~ s/^-//;
+    $self->{$k} = $args[$i+1];
+  }
 
   bless($self, $class);
   return $self;
