@@ -1,14 +1,14 @@
 language: perl
 
 perl:
-    - "5.16"
-    - "5.14"
-    - "5.12"
-    - "5.10"
+  - "5.16"
+  - "5.14"
+  - "5.12"
+  - "5.10"
 
 install:
-    - cpanm Dancer Mock::Quick Crypt::SaltedHash --quiet --notest
+  - cpanm --installdeps --quiet --notest Net::SNMP
 
 script:
-    - perl Makefile.PL
-    - make test
+  - perl Makefile.PL
+  - make test
