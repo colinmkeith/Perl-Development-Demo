@@ -1,4 +1,5 @@
-Demo-Poller version 0.0.1
+Demo-Poller v0.0.2
+===========
 
 This is a demonstration of my Perl development work as much of my existing work
 is proprietary.
@@ -20,22 +21,25 @@ It makes use of the following:
 
 
 INSTALLATION
+------------
 
 There is no application, just the tests
 
 	perl Makefile.PL
 	make
-	make test TEST_VERSBOSE=1
+	make test TEST_VERBOSE=1
 
 
 DEPENDENCIES
+------------
 
 Net::SNMP
 
 
 COPYRIGHT AND LICENCE
+---------------------
 
-Copyright (C) 2012, Colin Keith
+Copyright (C) 2013, Colin Keith
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
